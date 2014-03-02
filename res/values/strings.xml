@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">Server</string>
+    <string name="text_start">Start Client</string>
+	<string name="text_discovery">Make it discoverable</string>
+	<string name="text_scan">Scan for Devices</string>
+	<string name="text_check">Start Server</string>
+    <string name="text_enable">Enable Bluetooth</string>
+    <string name="text_clear">Clear Logs</string>
+    <string name="text_send">Send Output</string>
+    <string name="text_cancel">Cancel</string>
+</resources>
