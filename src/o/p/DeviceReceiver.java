@@ -3,6 +3,7 @@ package o.p;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
+
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.content.BroadcastReceiver;
@@ -38,7 +39,7 @@ public class DeviceReceiver extends BroadcastReceiver {
 					m.invoke(device, (Object[]) null);
 				}
 				catch (Exception e) {
-					Log.d("DEBUG", "Exception.", e);
+					Log.e("DEBUG", "Exception.", e);
 				}
 			}
 			devices.add(device);

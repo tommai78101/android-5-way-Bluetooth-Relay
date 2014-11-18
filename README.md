@@ -26,5 +26,23 @@ The UUID must be unique, and that all devices must use the same UUID to connect 
 
 | Button Name | What does it do? |
 |:---:|:---:|
-| Start Server | Starts up a BroadcastReceiver. |
-| Start Client | Starts up a 
+| Start Server | Starts up a BroadcastReceiver that accepts incoming connections. |
+| Start Client | Starts up a BroadcastReceiver that connects to any devices accepting outgoing connections. |
+| Cancel | Cancels all scanning, broadcasting, and receiving actions. |
+| Send Output | Sends a dummy packet to see if the connections have completed their handshakes and is receiving/sending packets normally. |
+| Scan for Devices | Scans for all nearby Bluetooth devices that allows them to be seen. Targeted devices should be Android-based. |
+| Clear Logs | Cleans up the log messages that appears on the screen. |
+
+#### Instructions
+
+Before use, you require at least 2 Android smartphones, and at most 5 Android smartphones. Each device must have this application installed.
+
+To start, one of the devices must initiate the server thread by pressing the **Start Server** button. Other devices should then initiate client threads by pressing the **Start Client** on each devices. Any one of these actions will start scanning for nearby Bluetooth devices. Please give a moment for the devices to discover other devices, and once they are discovered, the application will automatically initiate the handshake for acknowledgement.
+
+When the connections have been connected, you will see the device name in a Toast message, and from there, you can start chatting.
+
+All chat messages should be seen by all devices that are connected to the server device. 
+
+#### Known Issues
+
+Due to insufficient number of test devices, as well as being restricted to Android 4.4 KitKat, I cannot fix bugs or issues in such state. If anyone is willing to contribute, extend, or donate old Android devices to me, it is very appreciated.
